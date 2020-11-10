@@ -18,10 +18,6 @@ Rotate Clockwise | Right |
 Rotate Anticlockwise | Left | 
 Reset Level | R |
 
-* Thrust -> Up arrow key, space.
-* Rotate clockwise -> 
-* Rotate anticlockwise -> Left arrow key.
-
 &nbsp;
  
 &nbsp;
