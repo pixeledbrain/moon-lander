@@ -1,10 +1,8 @@
-﻿
-using System.Runtime.ExceptionServices;
-using System.Xml.Schema;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System;
 
 public class shuttleMovement : MonoBehaviour
@@ -57,13 +55,7 @@ public class shuttleMovement : MonoBehaviour
 
         if(resetPress){
             
-            // Reset position and rigidbody momentum
-            resetPress = false;
-            rb.velocity = new Vector2(0,0);
-            rb.angularVelocity = 0;
-            gameObject.transform.position = new Vector3(StartingX,StartingY);
-            gameObject.transform.rotation = new Quaternion(0,0,0,0);
-            fuelLeft = 1;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             
         } else {
 
