@@ -1,17 +1,31 @@
 # MoonShot
- for Game Off 2020
-https://itch.io/jam/game-off-2020
+for [Game Off 2020](https://itch.io/jam/game-off-2020)
 
-My first game jam, and real project.
+&nbsp;
 
-Controls:
+## Info:
 
-Thrust -> Up arrow key, space.
+Platforming game where you control a moon lander.
 
-Rotate clockwise -> Right arrow key.
+My first game jam, and real project, so don't expect much.
 
-Rotate anticlockwise -> Left arrow key.
+## Controls:
 
-&snbp;
+Action | Key 1 | Key 2
+:---: | :--- | :---
+Thrust | Up | Space
+Rotate Clockwise | Right | 
+Rotate Anticlockwise | Left | 
+Reset Level | R |
+
+* Thrust -> Up arrow key, space.
+* Rotate clockwise -> 
+* Rotate anticlockwise -> Left arrow key.
+
+&nbsp;
+ 
+&nbsp;
+
+&nbsp;
 
 Copyright 2020, Alberto Paradís Llop. All right reserved.
