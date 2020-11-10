@@ -20,6 +20,27 @@ Rotate Clockwise | Right |
 Rotate Anticlockwise | Left | 
 Reset Level | R |
 
+## TO-DO:
+
+- [X] Basic Controls
+- [X] Fuel System
+- [X] Basic Tileset
+- [X] Basic Shuttle Sprites
+- [ ] Other sprites (Goal, pickup, powerup) 
+- [ ] Powerups
+- [ ] Pickups (score coins)  
+- [ ] Visual Effects for other sprites
+- [ ] Visual Effect for Shuttle
+- [X] Main Menu
+- [X] Level Select
+- [ ] Sound Effects
+- [ ] Background Music
+- [ ] Credits 
+
+## Fixes:
+- [ ] Fuel Regen Control fix
+- [X] Change Reset System
+
 &nbsp;
  
 &nbsp;
