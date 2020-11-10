@@ -26,10 +26,13 @@ Reset Level | R |
 - [X] Fuel System
 - [X] Basic Tileset
 - [X] Basic Shuttle Sprites
-- [ ] Other sprites (Goal, pickup, powerup) 
+- [X] Crystal Sprite
+- [ ] Goal Sprite
+- [ ] Pickup Sprites
 - [ ] Powerups
-- [ ] Pickups (score coins)  
-- [ ] Visual Effects for other sprites
+- [X] Pickups (score coins)  
+- [ ] Visual Effects for coins
+- [ ] Visual Effects for powerups
 - [ ] Visual Effect for Shuttle
 - [X] Main Menu
 - [X] Level Select
@@ -38,7 +41,7 @@ Reset Level | R |
 - [ ] Credits 
 
 ## Fixes:
-- [ ] Fuel Regen Control fix
+- [X] Fuel Regen Control fix
 - [X] Change Reset System
 
 &nbsp;

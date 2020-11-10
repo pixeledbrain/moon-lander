@@ -5,6 +5,16 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
+
+// Forgive me for the spaghetti
+// Forgive me for the spaghetti
+// Forgive me for the spaghetti
+// Forgive me for the spaghetti
+// Forgive me for the spaghetti
+// Forgive me for the spaghetti
+// Forgive me for the spaghetti
+// Forgive me for the spaghetti
+
 public class shuttleMovement : MonoBehaviour
 {
 
@@ -18,13 +28,20 @@ public class shuttleMovement : MonoBehaviour
     public float fuelRegen;
     public Image fuelIm;
 
+    public Sprite SpaceShipNormal;
+    public Sprite SpaceShipTransparent;
+
     Rigidbody2D rb;
 
     GameObject fire1,fire2,fire3;
 
     float fuelLeft;
 
-    bool upPress=false,leftPress=false,rightPress=false,resetPress=false;
+    bool tinyState = false;
+
+    //bool upPressDown=false,leftPressDown=false,rightPressDown=false;
+    bool upPress=false,leftPress=false,rightPress=false,resetPress=false,tinyPress=false,canThrust=true;
+    //bool upPressUp=true,leftPressUp=true,rightPressUp=true;
 
 
     // Start is called before the first frame update
@@ -47,48 +64,74 @@ public class shuttleMovement : MonoBehaviour
         leftPress = Input.GetKey("left");
         rightPress = Input.GetKey("right");
         resetPress = Input.GetKeyDown("r")||resetPress;
+        tinyPress = Input.GetKeyDown("t")||tinyPress;
+
+        //upPressDown = Input.GetKeyDown("up")||upPressDown;leftPressDown=Input.GetKeyDown("left")||leftPressDown;rightPressDown=Input.GetKeyDown("right")||rightPressDown;
+        //upPressUp = Input.GetKeyUp("up")||upPressUp;leftPressUp=Input.GetKeyUp("left")||leftPressUp;rightPressUp=Input.GetKeyUp("right")||rightPressUp;
+
     }
 
     void FixedUpdate() {
 
         var startFuel = fuelLeft;
 
+        //Want fuel to regen when it has run out, while the buttons are pressed, but not trigger thrust until keys have been re-pressed
+        bool thrustReset = !upPress && !leftPress && !rightPress;
+
+        canThrust = fuelConsumption == 0 && fuelConsumptionRotate==0  || canThrust ||startFuel>0 && thrustReset;
+
+        if(tinyPress){
+
+            SpriteRenderer spriteRen = gameObject.GetComponent<SpriteRenderer>() as SpriteRenderer;
+            spriteRen.sprite = tinyState?SpaceShipNormal:SpaceShipTransparent;
+            tinyState = !tinyState;
+            tinyPress = false;
+        }
+
         if(resetPress){
             
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             
         } else {
+            
+            bool regenFuel = true;
 
-            if(upPress && (startFuel > 0||fuelConsumption==0)){
+            if(upPress && canThrust){
                 fire1.SetActive(true);
                 var rot = Quaternion.AngleAxis(rb.rotation,Vector3.forward);
                 var angledir = rot*Vector3.up;
                 fuelLeft = Mathf.Max(0,fuelLeft-fuelConsumption);
                 rb.AddForce(angledir*pushForce);
+                regenFuel = false;
             } else {
                 fire1.SetActive(false);
             }
 
-            if(!upPress && !leftPress && !rightPress){
-                fuelLeft = Mathf.Min(1,fuelLeft+fuelRegen);
-            }
-
-            if(leftPress && (startFuel > 0||fuelConsumptionRotate==0)){
+            if(leftPress && canThrust){
         
                 fuelLeft = Mathf.Max(0,fuelLeft-fuelConsumptionRotate);
+                regenFuel = false;
                 rb.AddTorque(torqueForce);
                 fire2.SetActive(true);
             }else {
                 fire2.SetActive(false);
             }
 
-            if(rightPress && (startFuel > 0||fuelConsumptionRotate==0)){
+            if(rightPress && canThrust){
                 fuelLeft = Mathf.Max(0,fuelLeft-fuelConsumptionRotate);
+                regenFuel = false;
                 rb.AddTorque(-1*torqueForce);
                 fire3.SetActive(true);
             } else {
                 fire3.SetActive(false);
             }
+
+            //if(!upPress && !leftPress && !rightPress){
+            if(regenFuel){
+                fuelLeft = Mathf.Min(1,fuelLeft+fuelRegen);
+            }
+
+            canThrust=fuelLeft==0?false:canThrust;
 
         }
 
