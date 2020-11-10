@@ -27,11 +27,11 @@ Reset Level | R |
 - [X] Basic Tileset
 - [X] Basic Shuttle Sprites
 - [X] Crystal Sprite
-- [ ] Goal Sprite
-- [ ] Pickup Sprites
+- [X] Goal Sprite
+- [ ] Powerup Sprites
 - [ ] Powerups
 - [X] Pickups (score coins)  
-- [ ] Visual Effects for coins
+- [ ] Visual Effects for crystals
 - [ ] Visual Effects for powerups
 - [ ] Visual Effect for Shuttle
 - [X] Main Menu
