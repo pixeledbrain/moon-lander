@@ -42,11 +42,11 @@ TagManager:
   - name: Background
     uniqueID: 1481741467
     locked: 0
+  - name: Resets
+    uniqueID: 4104086101
+    locked: 0
   - name: level
     uniqueID: 3379646353
-    locked: 0
-  - name: backlegs
-    uniqueID: 2652725783
     locked: 0
   - name: semiBack
     uniqueID: 2893096545
@@ -59,6 +59,12 @@ TagManager:
     locked: 0
   - name: Goal
     uniqueID: 3331846199
+    locked: 0
+  - name: backlegs
+    uniqueID: 2652725783
+    locked: 0
+  - name: Fire
+    uniqueID: 2913336257
     locked: 0
   - name: Player
     uniqueID: 2802576217

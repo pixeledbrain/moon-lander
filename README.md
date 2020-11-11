@@ -23,9 +23,10 @@ Reset Level | R |
 ## TO-DO:
 
 - [X] Basic Controls
-- [ ] Pause menu
+- [X] Pause menu
 - [X] In game UI
-- [ ] Auto-reset objects (fall off level)
+- [X] Auto-reset objects (fall off level)
+- [ ] Auto-reset objects (death objects-spikes?)
 - [X] Fuel System
 - [X] Basic Tileset
 - [X] Basic Shuttle Sprites
@@ -36,19 +37,31 @@ Reset Level | R |
 - [X] Pickups (score coins)  
 - [X] Visual Effects for crystals
 - [ ] Visual Effects for powerups
-- [ ] Visual Effect for Shuttle
+- [X] Visual Effect for Shuttle
 - [X] Main Menu
 - [X] Level Select
 - [ ] Sound Effects
 - [ ] Background Music
+- [ ] Level 1
+- [ ] Level 2
+- [ ] Level 3
+- [ ] Level 4
+- [ ] Level 5
+- [ ] Level 6
+- [ ] Level 7
+- [ ] Level 8
+- [ ] Level 9
+- [ ] Level 10
 - [ ] Credits  
 
 ## Fixes:
 - [X] Fuel Regen Control fix
 - [X] Change Reset System
 - [X] Extra spaceship animations
-- [ ] Text size in Buttons (Note: Text Pivots)
+- [X] Text size in Buttons (Note: Text Pivots)
 - [X] Resizing
+- [ ] Fix main menu text layout
+- [ ] Fix Level Selecct text layout
 
 &nbsp;
  

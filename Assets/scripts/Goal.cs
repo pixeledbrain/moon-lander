@@ -5,11 +5,13 @@ using UnityEngine;
 public class Goal : MonoBehaviour
 {
     public GameObject finishScreen;
+    public GameObject pauseController;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "Player"){
             other.gameObject.GetComponent<shuttleMovement>().disableFlames();
             other.gameObject.GetComponent<shuttleMovement>().enabled = false;
+            pauseController.GetComponent<PauseMenu>().enabled = false;
             //Play music here.
             StartCoroutine(CoroutineMethod());
         }
