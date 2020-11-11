@@ -12,7 +12,7 @@ public class LevelComplete : MonoBehaviour
                 SceneManager.LoadScene("Level"+nextLevelNum);
                 break;
             case 2: // Retry this level?
-                SceneManager.LoadScene("Level"+(nextLevelNum-1));
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 break;
             case 0:
                 SceneManager.LoadScene("MainMenu");

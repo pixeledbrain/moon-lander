@@ -23,6 +23,9 @@ Reset Level | R |
 ## TO-DO:
 
 - [X] Basic Controls
+- [ ] Pause menu
+- [X] In game UI
+- [ ] Auto-reset objects (fall off level)
 - [X] Fuel System
 - [X] Basic Tileset
 - [X] Basic Shuttle Sprites
@@ -31,14 +34,14 @@ Reset Level | R |
 - [ ] Powerup Sprites
 - [ ] Powerups
 - [X] Pickups (score coins)  
-- [ ] Visual Effects for crystals
+- [X] Visual Effects for crystals
 - [ ] Visual Effects for powerups
 - [ ] Visual Effect for Shuttle
 - [X] Main Menu
 - [X] Level Select
 - [ ] Sound Effects
 - [ ] Background Music
-- [ ] Credits 
+- [ ] Credits  
 
 ## Fixes:
 - [X] Fuel Regen Control fix

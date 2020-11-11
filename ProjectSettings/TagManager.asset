@@ -45,6 +45,9 @@ TagManager:
   - name: level
     uniqueID: 3379646353
     locked: 0
+  - name: backlegs
+    uniqueID: 2652725783
+    locked: 0
   - name: semiBack
     uniqueID: 2893096545
     locked: 0

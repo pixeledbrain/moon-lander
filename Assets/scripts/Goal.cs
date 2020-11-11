@@ -10,7 +10,14 @@ public class Goal : MonoBehaviour
         if(other.gameObject.tag == "Player"){
             other.gameObject.GetComponent<shuttleMovement>().disableFlames();
             other.gameObject.GetComponent<shuttleMovement>().enabled = false;
-            finishScreen.SetActive(true);
+            //Play music here.
+            StartCoroutine(CoroutineMethod());
         }
+    }
+
+    IEnumerator CoroutineMethod(){
+        yield return new WaitForSeconds(0.5f);
+        finishScreen.SetActive(true);
+        
     }
 }
