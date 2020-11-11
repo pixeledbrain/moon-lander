@@ -52,7 +52,8 @@ Reset Level | R |
 - [ ] Level 8
 - [ ] Level 9
 - [ ] Level 10
-- [ ] Credits  
+- [ ] Credits
+- [ ] Title for title screen
 
 ## Fixes:
 - [X] Fuel Regen Control fix
@@ -61,7 +62,9 @@ Reset Level | R |
 - [X] Text size in Buttons (Note: Text Pivots)
 - [X] Resizing
 - [ ] Fix main menu text layout
-- [ ] Fix Level Selecct text layout
+- [ ] Fix Level Select text layout
+- [ ] Fix Ground Textures
+- [X] Fix Spaceship textures
 
 &nbsp;
  

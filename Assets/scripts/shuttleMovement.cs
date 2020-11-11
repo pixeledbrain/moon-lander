@@ -130,9 +130,7 @@ public class shuttleMovement : MonoBehaviour
             if(regenFuel){
                 fuelLeft = Mathf.Min(1,fuelLeft+fuelRegen);
             }
-
             canThrust=fuelLeft==0?false:canThrust;
-
         }
 
         fuelIm.rectTransform.localScale = new Vector3(1, fuelLeft,1);

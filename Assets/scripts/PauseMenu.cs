@@ -56,6 +56,7 @@ public class PauseMenu : MonoBehaviour
         switch (value)
         {
             case 0://Exit
+                pauseOff();
                 SceneManager.LoadScene("MainMenu");
                 break;
             case 1://Show "How to play". Activate howtoplay, deactivate self.
