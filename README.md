@@ -7,9 +7,9 @@ Theme was "Moonshot".
 
 ## Info:
 
-Platforming game where you control a moon lander.
+Platforming game where you control a moon lander. Only controls are to apply rotation and thrust to the ship. Use this to navigate each level and reach the goal. You can pick up collectables that increase your score, but it does nothing.
 
-My first game jam, and real project, so don't expect much.
+My first real project, and first Game Jam, so I went small. Hope you enjoy it!
 
 ## Controls:
 
