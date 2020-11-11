@@ -46,6 +46,9 @@ Reset Level | R |
 ## Fixes:
 - [X] Fuel Regen Control fix
 - [X] Change Reset System
+- [X] Extra spaceship animations
+- [ ] Text size in Buttons (Note: Text Pivots)
+- [X] Resizing
 
 &nbsp;
  
