@@ -56,7 +56,7 @@ Reset Level | R |
 - [ ] Level 8
 - [ ] Level 9
 - [ ] Level 10
-- [ ] Credits
+- [X] Credits
 - [ ] Title for title screen
 
 ## Fixes:
@@ -65,10 +65,11 @@ Reset Level | R |
 - [X] Extra spaceship animations
 - [X] Text size in Buttons (Note: Text Pivots)
 - [X] Resizing
-- [ ] Fix main menu text layout
-- [ ] Fix Level Select text layout
+- [X] Fix main menu text layout
+- [X] Fix Level Select text layout
 - [X] Fix Ground Textures
 - [X] Fix Spaceship textures
+- [ ] Finish Credits
 
 ## Optional Fixes:
 - [ ] Make stars animation better

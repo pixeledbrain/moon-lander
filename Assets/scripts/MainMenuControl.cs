@@ -13,6 +13,7 @@ public class MainMenuControl : MonoBehaviour
                 SceneManager.LoadScene("LevelSelect");
                 break;
             case 2:
+            SceneManager.LoadScene("Credits");
                 break;
             case 0:
                 Application.Quit();
