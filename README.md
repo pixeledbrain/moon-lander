@@ -22,11 +22,12 @@ Reset Level | R |
 
 ## TO-DO:
 
+
 - [X] Basic Controls
 - [X] Pause menu
 - [X] In game UI
-- [X] Auto-reset objects (fall off level)
-- [ ] Auto-reset objects (death objects-spikes?)
+- [X] Auto-reset object logic (fall off level)
+- [ ] Auto-reset sprites (death objects-spikes?)
 - [X] Fuel System
 - [X] Basic Tileset
 - [X] Basic Shuttle Sprites
@@ -63,8 +64,12 @@ Reset Level | R |
 - [X] Resizing
 - [ ] Fix main menu text layout
 - [ ] Fix Level Select text layout
-- [ ] Fix Ground Textures
+- [X] Fix Ground Textures
 - [X] Fix Spaceship textures
+
+## Optional Fixes:
+- [ ] Make stars animation better
+- [ ] General visual improvements everywhere
 
 &nbsp;
  
