@@ -28,21 +28,18 @@ Reset Level | R |
 - [X] Auto-reset object logic (fall off level)
 - [X] Fuel System
 - [X] Pickups (score coins)  
+- [X] Thrust scaling by gravity
 - [ ] Program sound effect (esp. bonks)
 
-### Design
+### Design in-game
 - [X] In game UI
-- [ ] Auto-reset sprites (death objects-spikes?)
-- [X] Button for Moon
+- [X] Auto-reset sprites (Invis for now)
 - [X] Background for Moon
 - [X] Tileset for Moon
-- [ ] Button for city
 - [ ] Background for city
-- [ ] Tileset for city (Buildings)
-- [ ] Button for Sky
+- [X] Tileset for city (Buildings)
 - [ ] Background for Sky
-- [ ] Tileset for Sky (Clouds)
-- [ ] Button for Asteroid
+- [X] Tileset for Sky (Clouds)
 - [ ] Background for Asteroid
 - [ ] Tileset for Asteroid
 - [X] Basic Shuttle Sprites
@@ -50,10 +47,19 @@ Reset Level | R |
 - [X] Goal Sprite
 - [X] Visual Effects for crystals
 - [X] Visual Effect for Shuttle
+- [ ] Final goal
+
+
+
+### Design other
+- [ ] Title for title screen
 - [X] Main Menu
 - [X] Level Select
 - [X] Credits
-- [ ] Title for title screen
+- [X] Button for Moon
+- [ ] Button for Asteroid
+- [ ] Button for Sky
+- [ ] Button for city
 
 ### Music & Sound
 - [ ] Sound Effects for pickup
@@ -83,13 +89,17 @@ Reset Level | R |
 - [X] Fix Level Select text layout
 - [X] Fix Ground Textures
 - [X] Fix Spaceship textures
-- [X] Added thrust scaling by gravity for levels with different scaling
+- [ ] Different ending "level finished" screen (disable button)
 - [ ] Finish Credits
 
 ## Optional Fixes:
 - [ ] Add story prelude to scene 1
-- [ ] Make stars animation better
 - [ ] General visual improvements everywhere
+
+## Future work:
+- [ ] Power-ups (Unlimited boost for time, stronger boost for time)
+- [ ] Tutorial Dialogue
+
 
 &nbsp;
  
