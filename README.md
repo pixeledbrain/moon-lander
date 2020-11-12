@@ -41,7 +41,10 @@ Reset Level | R |
 - [X] Visual Effect for Shuttle
 - [X] Main Menu
 - [X] Level Select
-- [ ] Sound Effects
+- [ ] Sound Effects for pickup
+- [ ] Sound Effects for powerups
+- [ ] Sound Effects for goal
+- [ ] Sound Effects for bonks
 - [ ] Background Music
 - [ ] Level 1
 - [ ] Level 2
