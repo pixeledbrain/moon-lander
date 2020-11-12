@@ -11,6 +11,10 @@ Platforming game where you control a moon lander. Only controls are to apply rot
 
 My first real project, and first Game Jam, so I went small. Hope you enjoy it!
 
+## Story:
+
+An infinite energy source was discovered on Earth, however, it can't store much energy at once. You control a Shuttle equipped with said energy source, and your objective is to use it to reach the moon to ... .
+
 ## Controls:
 
 Action | Key 1 | Key 2
