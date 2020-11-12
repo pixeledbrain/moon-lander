@@ -28,6 +28,9 @@ public class shuttleMovement : MonoBehaviour
     public float fuelRegen;
     public Image fuelIm;
 
+    public bool adjustThrust = false;
+    public float adjustThrustScale = 1;
+
     public Sprite SpaceShipNormal;
     public Sprite SpaceShipTransparent;
 
@@ -36,6 +39,9 @@ public class shuttleMovement : MonoBehaviour
     GameObject fire1,fire2,fire3;
 
     float fuelLeft;
+
+    
+    float realPushForce = 0;
 
     bool tinyState = false;
 
@@ -53,7 +59,19 @@ public class shuttleMovement : MonoBehaviour
         fire1 = gameObject.transform.Find("Fire1").gameObject;
         fire2 = gameObject.transform.Find("Fire2").gameObject;
         fire3 = gameObject.transform.Find("Fire3").gameObject;
+        if(adjustThrust){
+            //MOON GRAVSCALE = 0.166666
+            float gravScale = rb.gravityScale;
+            //realPushForce = (4f/0.166666f) * gravScale;
 
+            //other alternative
+            float dampForce = 9.81f*gravScale;
+            float wantedUpwardForce = (4f-(9.81f/6f));
+            wantedUpwardForce = wantedUpwardForce + wantedUpwardForce*(gravScale-0.166666f)*adjustThrustScale;
+            realPushForce = dampForce+wantedUpwardForce;
+        } else {
+            realPushForce = pushForce;
+        }
     }
 
     // Update is called once per frame
@@ -101,7 +119,7 @@ public class shuttleMovement : MonoBehaviour
                 var rot = Quaternion.AngleAxis(rb.rotation,Vector3.forward);
                 var angledir = rot*Vector3.up;
                 fuelLeft = Mathf.Max(0,fuelLeft-fuelConsumption);
-                rb.AddForce(angledir*pushForce);
+                rb.AddForce(angledir*realPushForce);
                 regenFuel = false;
             } else {
                 fire1.SetActive(false);

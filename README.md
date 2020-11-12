@@ -22,42 +22,56 @@ Reset Level | R |
 
 ## TO-DO:
 
-
+### Programming
 - [X] Basic Controls
 - [X] Pause menu
-- [X] In game UI
 - [X] Auto-reset object logic (fall off level)
-- [ ] Auto-reset sprites (death objects-spikes?)
 - [X] Fuel System
-- [X] Basic Tileset
+- [X] Pickups (score coins)  
+- [ ] Program sound effect (esp. bonks)
+
+### Design
+- [X] In game UI
+- [ ] Auto-reset sprites (death objects-spikes?)
+- [X] Button for Moon
+- [X] Background for Moon
+- [X] Tileset for Moon
+- [ ] Button for city
+- [ ] Background for city
+- [ ] Tileset for city (Buildings)
+- [ ] Button for Sky
+- [ ] Background for Sky
+- [ ] Tileset for Sky (Clouds)
+- [ ] Button for Asteroid
+- [ ] Background for Asteroid
+- [ ] Tileset for Asteroid
 - [X] Basic Shuttle Sprites
 - [X] Crystal Sprite
 - [X] Goal Sprite
-- [ ] Powerup Sprites
-- [ ] Powerups
-- [X] Pickups (score coins)  
 - [X] Visual Effects for crystals
-- [ ] Visual Effects for powerups
 - [X] Visual Effect for Shuttle
 - [X] Main Menu
 - [X] Level Select
+- [X] Credits
+- [ ] Title for title screen
+
+### Music & Sound
 - [ ] Sound Effects for pickup
-- [ ] Sound Effects for powerups
 - [ ] Sound Effects for goal
 - [ ] Sound Effects for bonks
 - [ ] Background Music
-- [ ] Level 1
-- [ ] Level 2
-- [ ] Level 3
-- [ ] Level 4
-- [ ] Level 5
-- [ ] Level 6
-- [ ] Level 7
-- [ ] Level 8
-- [ ] Level 9
-- [ ] Level 10
-- [X] Credits
-- [ ] Title for title screen
+
+### Level Design
+- [ ] Level 1 (City)
+- [ ] Level 2 (City)
+- [ ] Level 3 (Sky)
+- [ ] Level 4 (Sky)
+- [ ] Level 5 (Sky)
+- [ ] Level 6 (Asteroid)
+- [ ] Level 7 (Asteroid)
+- [ ] Level 8 (Moon)
+- [ ] Level 9 (Moon)
+- [ ] Level 10 (Moon)
 
 ## Fixes:
 - [X] Fuel Regen Control fix
@@ -69,9 +83,11 @@ Reset Level | R |
 - [X] Fix Level Select text layout
 - [X] Fix Ground Textures
 - [X] Fix Spaceship textures
+- [X] Added thrust scaling by gravity for levels with different scaling
 - [ ] Finish Credits
 
 ## Optional Fixes:
+- [ ] Add story prelude to scene 1
 - [ ] Make stars animation better
 - [ ] General visual improvements everywhere
 
