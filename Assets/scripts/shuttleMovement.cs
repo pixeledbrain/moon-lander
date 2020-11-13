@@ -29,6 +29,7 @@ public class shuttleMovement : MonoBehaviour
     public Image fuelIm;
 
     public bool adjustThrust = false;
+    public bool thrustingRightNow = false;
     public float adjustThrustScale = 1;
 
     public Sprite SpaceShipNormal;
@@ -37,6 +38,7 @@ public class shuttleMovement : MonoBehaviour
     Rigidbody2D rb;
 
     GameObject fire1,fire2,fire3;
+    AudioSource fire1AS,fire2AS,fire3AS;
 
     float fuelLeft;
 
@@ -113,6 +115,7 @@ public class shuttleMovement : MonoBehaviour
         } else {
             
             bool regenFuel = true;
+            thrustingRightNow = false;
 
             if(upPress && canThrust){
                 fire1.SetActive(true);
@@ -121,6 +124,7 @@ public class shuttleMovement : MonoBehaviour
                 fuelLeft = Mathf.Max(0,fuelLeft-fuelConsumption);
                 rb.AddForce(angledir*realPushForce);
                 regenFuel = false;
+                thrustingRightNow = true;
             } else {
                 fire1.SetActive(false);
             }
@@ -131,6 +135,7 @@ public class shuttleMovement : MonoBehaviour
                 regenFuel = false;
                 rb.AddTorque(torqueForce);
                 fire2.SetActive(true);
+                thrustingRightNow = true;
             }else {
                 fire2.SetActive(false);
             }
@@ -140,6 +145,7 @@ public class shuttleMovement : MonoBehaviour
                 regenFuel = false;
                 rb.AddTorque(-1*torqueForce);
                 fire3.SetActive(true);
+                thrustingRightNow = true;
             } else {
                 fire3.SetActive(false);
             }

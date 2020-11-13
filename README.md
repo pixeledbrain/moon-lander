@@ -24,6 +24,23 @@ Rotate Clockwise | Right |
 Rotate Anticlockwise | Left | 
 Reset Level | R |
 
+## Extra credits:
+
+[Metal Tap Sound Effect](https://freesound.org/people/BenjaminNelan/sounds/410363/)
+
+Metal Tap sound has been pitched down.
+
+[Main Thruster Sound Effect](https://freesound.org/people/primeval_polypod/sounds/159012/)
+
+Small thruster sound is the same but it has been pitched up.
+
+
+&nbsp;
+
+&nbsp;
+
+
+
 ## TO-DO:
 
 ### Programming
@@ -33,7 +50,7 @@ Reset Level | R |
 - [X] Fuel System
 - [X] Pickups (score coins)  
 - [X] Thrust scaling by gravity
-- [ ] Program sound effect (esp. bonks)
+- [X] Program sound effect (esp. bonks)
 
 ### Design in-game
 - [X] In game UI
@@ -53,22 +70,18 @@ Reset Level | R |
 - [X] Visual Effect for Shuttle
 - [ ] Final goal
 
-
-
 ### Design other
 - [ ] Title for title screen
 - [X] Main Menu
 - [X] Level Select
 - [X] Credits
 - [X] Button for Moon
-- [ ] Button for Asteroid
-- [ ] Button for Sky
-- [ ] Button for city
 
 ### Music & Sound
 - [ ] Sound Effects for pickup
 - [ ] Sound Effects for goal
-- [ ] Sound Effects for bonks
+- [X] Sound Effects for bonks
+- [X] Sound Effects for thruster
 - [ ] Background Music
 
 ### Level Design
@@ -76,9 +89,9 @@ Reset Level | R |
 - [ ] Level 2 (City)
 - [ ] Level 3 (Sky)
 - [ ] Level 4 (Sky)
-- [ ] Level 5 (Sky)
+- [ ] Level 5 (Asteroid)
 - [ ] Level 6 (Asteroid)
-- [ ] Level 7 (Asteroid)
+- [ ] Level 7 (Moon)
 - [ ] Level 8 (Moon)
 - [ ] Level 9 (Moon)
 - [ ] Level 10 (Moon)
@@ -93,7 +106,7 @@ Reset Level | R |
 - [X] Fix Level Select text layout
 - [X] Fix Ground Textures
 - [X] Fix Spaceship textures
-- [ ] Different ending "level finished" screen (disable button)
+- [ ] Different Final Level "level finished" screen (disable button)
 - [ ] Finish Credits
 
 ## Optional Fixes:
@@ -103,6 +116,12 @@ Reset Level | R |
 ## Future work:
 - [ ] Power-ups (Unlimited boost for time, stronger boost for time)
 - [ ] Tutorial Dialogue
+- [ ] Button & Dialogue Background for Asteroid
+- [ ] Button & Dialogue Background for Sky
+- [ ] Button & Dialogue Background for city
+
+
+
 
 
 &nbsp;
