@@ -20,6 +20,36 @@ TextureImporter:
   - first:
       213: 827277797987302843
     second: Sky_5
+  - first:
+      213: -6139137123008411330
+    second: Sky_0
+  - first:
+      213: 9047178727230093723
+    second: Sky_1
+  - first:
+      213: -4989060465412782580
+    second: Sky_2
+  - first:
+      213: -4136499219355177855
+    second: Sky_3
+  - first:
+      213: -7620951220102797416
+    second: Sky_4
+  - first:
+      213: 3647973394647218459
+    second: Sky_5
+  - first:
+      213: -3797368470069866874
+    second: Sky_6
+  - first:
+      213: -8230503452430015897
+    second: Sky_7
+  - first:
+      213: -1692089440758696756
+    second: Sky_8
+  - first:
+      213: 8901821185649789169
+    second: Sky_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -125,8 +155,8 @@ TextureImporter:
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: ce9392a9b5d647120800000000000000
-      internalID: 2410671940745902572
+      spriteID: e398bab20576dcaa0800000000000000
+      internalID: -6139137123008411330
       vertices: []
       indices: 
       edges: []
@@ -150,8 +180,8 @@ TextureImporter:
         - {x: 16, y: 12}
       tessellationDetail: 0
       bones: []
-      spriteID: b722e429c59212ab0800000000000000
-      internalID: -5034697430855179653
+      spriteID: b9935005e190e8d70800000000000000
+      internalID: 9047178727230093723
       vertices: []
       indices: 
       edges: []
@@ -172,12 +202,11 @@ TextureImporter:
       - - {x: -16, y: 12}
         - {x: -16, y: -16}
         - {x: 12, y: -16}
-        - {x: 12, y: 10}
-        - {x: 10, y: 12}
+        - {x: 12, y: 12}
       tessellationDetail: 0
       bones: []
-      spriteID: c2559918665efaba0800000000000000
-      internalID: -6075385143875775188
+      spriteID: c06402c90fb43cab0800000000000000
+      internalID: -4989060465412782580
       vertices: []
       indices: 
       edges: []
@@ -195,18 +224,23 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 10, y: 7}
-        - {x: 8, y: 5}
-        - {x: 4, y: 2}
+      - - {x: 6, y: 4}
+        - {x: 4, y: 3}
+        - {x: 0, y: -1}
         - {x: 0, y: -3}
-        - {x: -3, y: -7}
+        - {x: -1, y: -4}
+        - {x: -4, y: -5}
+        - {x: -4, y: -8}
+        - {x: -6, y: -10}
+        - {x: -8, y: -11}
+        - {x: -9, y: -13}
         - {x: -12, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 12}
       tessellationDetail: 0
       bones: []
-      spriteID: 71577a118fbfa6960800000000000000
-      internalID: 7596160764380411159
+      spriteID: 18c67a840e33896c0800000000000000
+      internalID: -4136499219355177855
       vertices: []
       indices: 
       edges: []
@@ -231,8 +265,8 @@ TextureImporter:
         - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: 34effea121af33790800000000000000
-      internalID: -7551417194501898685
+      spriteID: 897613b2e31fc3690800000000000000
+      internalID: -7620951220102797416
       vertices: []
       indices: 
       edges: []
@@ -250,47 +284,126 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 11, y: 10}
-        - {x: 10, y: 13}
+      - - {x: 11, y: -6}
+        - {x: 13, y: -4}
+        - {x: 13, y: 4}
+        - {x: 11, y: 6}
+        - {x: 11, y: 8}
+        - {x: 12, y: 10}
+        - {x: 12, y: 12}
+        - {x: 10, y: 14}
+        - {x: 8, y: 14}
         - {x: 7, y: 13}
         - {x: 5, y: 13}
-        - {x: 4, y: 14}
-        - {x: -2, y: 14}
         - {x: -3, y: 13}
         - {x: -7, y: 13}
-        - {x: -9, y: 13}
-        - {x: -11, y: 13}
-        - {x: -12, y: 11}
-        - {x: -13, y: 8}
+        - {x: -8, y: 14}
+        - {x: -11, y: 14}
+        - {x: -12, y: 13}
+        - {x: -13, y: 11}
+        - {x: -13, y: 9}
         - {x: -13, y: 6}
-        - {x: -14, y: 5}
-        - {x: -14, y: 2}
         - {x: -13, y: 1}
-        - {x: -13, y: -4}
         - {x: -12, y: -5}
-        - {x: -7, y: -10}
+        - {x: -8, y: -9}
         - {x: -6, y: -10}
-        - {x: -5, y: -11}
-        - {x: -3, y: -11}
-        - {x: -2, y: -12}
-        - {x: 0, y: -12}
+        - {x: -4, y: -11}
+        - {x: -2, y: -13}
+        - {x: 0, y: -13}
         - {x: 2, y: -11}
         - {x: 4, y: -11}
         - {x: 5, y: -10}
         - {x: 7, y: -10}
+        - {x: 8, y: -9}
         - {x: 9, y: -8}
         - {x: 10, y: -8}
         - {x: 11, y: -7}
-        - {x: 11, y: -6}
-        - {x: 13, y: -4}
-        - {x: 13, y: 4}
-        - {x: 12, y: 5}
-        - {x: 11, y: 6}
-        - {x: 11, y: 8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: b19f502897430a230800000000000000
+      internalID: 3647973394647218459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 16}
+        - {x: -16, y: 12}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 12}
+        - {x: 12, y: 16}
       tessellationDetail: 0
       bones: []
-      spriteID: bbdb99f26c41b7b00800000000000000
-      internalID: 827277797987302843
+      spriteID: 68e873cee790d4bc0800000000000000
+      internalID: -3797368470069866874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 16}
+        - {x: -16, y: 12}
+        - {x: -16, y: -16}
+        - {x: 12, y: -16}
+        - {x: 16, y: -12}
+        - {x: 16, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762684397b067cd80800000000000000
+      internalID: -8230503452430015897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 16}
+        - {x: -16, y: 12}
+        - {x: -16, y: -16}
+        - {x: 12, y: -16}
+        - {x: 16, y: -12}
+        - {x: 16, y: 12}
+        - {x: 12, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc473636e9d7488e0800000000000000
+      internalID: -1692089440758696756
       vertices: []
       indices: 
       edges: []

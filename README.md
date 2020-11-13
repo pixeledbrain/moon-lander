@@ -26,13 +26,9 @@ Reset Level | R |
 
 ## Extra credits:
 
-[Metal Tap Sound Effect](https://freesound.org/people/BenjaminNelan/sounds/410363/)
+[Metal Tap Sound Effect](https://freesound.org/people/BenjaminNelan/sounds/410363/) - Metal Tap sound has been pitched down.
 
-Metal Tap sound has been pitched down.
-
-[Main Thruster Sound Effect](https://freesound.org/people/primeval_polypod/sounds/159012/)
-
-Small thruster sound is the same but it has been pitched up.
+[Main Thruster Sound Effect](https://freesound.org/people/primeval_polypod/sounds/159012/) - Small thruster sound is the same but it has been pitched up.
 
 
 &nbsp;
@@ -61,8 +57,8 @@ Small thruster sound is the same but it has been pitched up.
 - [X] Tileset for city (Buildings)
 - [ ] Background for Sky
 - [X] Tileset for Sky (Clouds)
-- [ ] Background for Asteroid
-- [ ] Tileset for Asteroid
+- [X] Background for Asteroid
+- [X] Tileset for Asteroid
 - [X] Basic Shuttle Sprites
 - [X] Crystal Sprite
 - [X] Goal Sprite
