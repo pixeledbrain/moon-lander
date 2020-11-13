@@ -26,9 +26,19 @@ Reset Level | R |
 
 ## Extra credits:
 
-[Metal Tap Sound Effect](https://freesound.org/people/BenjaminNelan/sounds/410363/) - Metal Tap sound has been pitched down.
+[Tinyte2WHA - TinyTeaparty](https://twitter.com/TinyTrashMnstr) - "Secret" icon inside Shuttle. Press "T" to toggle the Shuttle window and see it.
 
-[Main Thruster Sound Effect](https://freesound.org/people/primeval_polypod/sounds/159012/) - Small thruster sound is the same but it has been pitched up.
+[Metal Tap - BenjaminNelan](https://freesound.org/people/BenjaminNelan/sounds/410363/) - Metal Tap sound for shuttle impacts. Has been pitched down.
+
+[Rocket Boost Engine Loop.wav - qubodup](https://freesound.org/people/qubodup/sounds/146770/) - For Big and small thrusters. Pitch has been changed.
+
+[Coin02.wav - sharesynth](https://freesound.org/people/sharesynth/sounds/341229/) - Crystal Pickup Sound Effect
+
+[MattLeschuck - success_bell](https://freesound.org/people/MattLeschuck/sounds/511484/) - Goal Reached Sound Effect
+
+[Soft and Furious - Powerful Stasis](https://freemusicarchive.org/music/Soft_and_Furious/You_know_where_to_find_me/Soft_and_Furious_-_You_know_where_to_find_me_-_07_Powerful_Stasis) - Main Menu BGM
+
+[Soft and Furious - Horizon Ending](https://freemusicarchive.org/music/Soft_and_Furious/You_know_where_to_find_me/Soft_and_Furious_-_You_know_where_to_find_me_-_09_Horizon_Ending) - Game BGM
 
 
 &nbsp;
@@ -64,7 +74,6 @@ Reset Level | R |
 - [X] Goal Sprite
 - [X] Visual Effects for crystals
 - [X] Visual Effect for Shuttle
-- [ ] Final goal
 
 ### Design other
 - [ ] Title for title screen
@@ -74,11 +83,11 @@ Reset Level | R |
 - [X] Button for Moon
 
 ### Music & Sound
-- [ ] Sound Effects for pickup
-- [ ] Sound Effects for goal
+- [X] Sound Effects for pickup
+- [X] Sound Effects for goal
 - [X] Sound Effects for bonks
 - [X] Sound Effects for thruster
-- [ ] Background Music (Possibly different for each level theme + menu)
+- [X] Background Music (Possibly different for each level theme + menu)
 
 ### Level Design
 - [ ] Level 1 (City)
@@ -102,12 +111,16 @@ Reset Level | R |
 - [X] Fix Level Select text layout
 - [X] Fix Ground Textures
 - [X] Fix Spaceship textures
+- [X] Disable ship sfx when stuck
+- [X] Fix popping noise on thrusters (could be better)
 - [ ] Different Final Level "level finished" screen (disable button)
-- [ ] Finish Credits
+- [X] Finish Credits
+- [ ] Adjust Credits
 
 ## Optional Fixes:
 - [ ] Add story prelude to scene 1
 - [ ] General visual improvements everywhere
+- [ ] Make a goal that makes sense
 
 ## Future work:
 - [ ] Power-ups (Unlimited boost for time, stronger boost for time)
@@ -117,8 +130,8 @@ Reset Level | R |
 - [ ] Button & Dialogue Background for city
 - [ ] Divide goal in background and foreground and give it an animation
 - [ ] Different Background for City and Sky
- 
-
+- [ ] Final goal
+- [ ] Final Cutscene
 
 
 

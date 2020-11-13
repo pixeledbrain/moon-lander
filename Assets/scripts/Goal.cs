@@ -12,7 +12,8 @@ public class Goal : MonoBehaviour
             other.gameObject.GetComponent<shuttleMovement>().disableFlames();
             other.gameObject.GetComponent<shuttleMovement>().enabled = false;
             pauseController.GetComponent<PauseMenu>().enabled = false;
-            //Play music here.
+            AudioSource aSource = gameObject.GetComponent<AudioSource>() as AudioSource;
+            aSource.Play();
             StartCoroutine(CoroutineMethod());
         }
     }

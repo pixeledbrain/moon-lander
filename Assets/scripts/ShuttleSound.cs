@@ -15,6 +15,9 @@ public class ShuttleSound : MonoBehaviour
 
     public float fire1Volume=1;
     public float fireSmallVolume=1;
+
+    int numInARow;
+    float overrideVol = 1;
     
     // Start is called before the first frame update
     void Start()
@@ -24,16 +27,23 @@ public class ShuttleSound : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {   
 
         ContactPoint2D[] listContacts = new ContactPoint2D[10];
         rb.GetContacts(listContacts);
         foreach(ContactPoint2D item in listContacts){
             if(item.normalImpulse>=thresholdMin){
+                if(++numInARow>3){
+                    overrideVol=0;
+                }
                 float fixedImpulse = Mathf.Min(item.normalImpulse,thresholdMax);
-                aSource.volume = (((item.normalImpulse - thresholdMin)/thresholdMax)*(thresholdMaxVolume-thresholdMinVolume))+thresholdMinVolume;
+                aSource.volume = Mathf.Min((((item.normalImpulse - thresholdMin)/thresholdMax)*(thresholdMaxVolume-thresholdMinVolume))+thresholdMinVolume,overrideVol);
                 aSource.Play();
+                break;
+            } else {
+                numInARow=0;
+                overrideVol = 1;
             }
         }
     }

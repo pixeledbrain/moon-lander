@@ -14,6 +14,8 @@ public class Coin : MonoBehaviour
     {
         if(other.gameObject.tag == "Player"){
             ScoreBoard.GetComponent<ScoreCounter>().score += 100;
+            AudioSource aSource = gameObject.transform.parent.gameObject.GetComponent<AudioSource>() as AudioSource;
+            aSource.Play();
             gameObject.SetActive(false);
         }
     }

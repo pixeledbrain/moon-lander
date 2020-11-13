@@ -40,6 +40,7 @@
      <Compile Include="Assets\scripts\Coin.cs" />
      <Compile Include="Assets\scripts\LevelSelectScript.cs" />
      <Compile Include="Assets\scripts\ResetTiles.cs" />
+     <Compile Include="Assets\scripts\ShuttleSound.cs" />
      <Compile Include="Assets\scripts\LevelComplete.cs" />
      <Compile Include="Assets\scripts\Parallax.cs" />
      <Compile Include="Assets\scripts\followCam.cs" />
@@ -47,7 +48,8 @@
      <Compile Include="Assets\scripts\ScoreCounter.cs" />
      <Compile Include="Assets\scripts\MainMenuControl.cs" />
      <Compile Include="Assets\scripts\shuttleMovement.cs" />
-     <Compile Include="Assets\scripts\ShuttleSound.cs" />
+     <Compile Include="Assets\scripts\bgm.cs" />
+     <Compile Include="Assets\scripts\bgmTrackSet.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

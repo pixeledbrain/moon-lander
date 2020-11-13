@@ -39,6 +39,9 @@ public class shuttleMovement : MonoBehaviour
 
     GameObject fire1,fire2,fire3;
     AudioSource fire1AS,fire2AS,fire3AS;
+    SpriteRenderer fire1SR,fire2SR,fire3SR;
+    float fire1ASvol,fire2ASvol,fire3ASvol;
+    bool fire1On=false,fire2On=false,fire3On=false;
 
     float fuelLeft;
 
@@ -59,8 +62,20 @@ public class shuttleMovement : MonoBehaviour
         rb = gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
         fuelLeft = 1;
         fire1 = gameObject.transform.Find("Fire1").gameObject;
+        fire1AS = fire1.GetComponent<AudioSource>() as AudioSource;
+        fire1SR = fire1.GetComponent<SpriteRenderer>() as SpriteRenderer;
+        fire1ASvol = fire1AS.volume;
+        fire1AS.volume=0;
         fire2 = gameObject.transform.Find("Fire2").gameObject;
+        fire2AS = fire2.GetComponent<AudioSource>() as AudioSource;
+        fire2SR = fire2.GetComponent<SpriteRenderer>() as SpriteRenderer;
+        fire2ASvol = fire2AS.volume;
+        fire2AS.volume=0;
         fire3 = gameObject.transform.Find("Fire3").gameObject;
+        fire3AS = fire3.GetComponent<AudioSource>() as AudioSource;
+        fire3SR = fire3.GetComponent<SpriteRenderer>() as SpriteRenderer;
+        fire3ASvol = fire3AS.volume;
+        fire3AS.volume=0;
         if(adjustThrust){
             //MOON GRAVSCALE = 0.166666
             float gravScale = rb.gravityScale;
@@ -118,7 +133,11 @@ public class shuttleMovement : MonoBehaviour
             thrustingRightNow = false;
 
             if(upPress && canThrust){
-                fire1.SetActive(true);
+                fire1SR.enabled=true;
+                fire1AS.volume = fire1ASvol;
+                fire1AS.UnPause();
+                fire1On=true;
+
                 var rot = Quaternion.AngleAxis(rb.rotation,Vector3.forward);
                 var angledir = rot*Vector3.up;
                 fuelLeft = Mathf.Max(0,fuelLeft-fuelConsumption);
@@ -126,28 +145,48 @@ public class shuttleMovement : MonoBehaviour
                 regenFuel = false;
                 thrustingRightNow = true;
             } else {
-                fire1.SetActive(false);
+                if(fire1On){
+                    StartCoroutine(VolumeFade(fire1AS, 0f, 0.2f));
+                    fire1SR.enabled=false;
+                    fire1On=false;
+                }
             }
 
             if(leftPress && canThrust){
+
+                fire2SR.enabled=true;
+                fire2AS.volume = fire2ASvol;
+                fire2AS.UnPause();
+                fire2On=true;
         
                 fuelLeft = Mathf.Max(0,fuelLeft-fuelConsumptionRotate);
                 regenFuel = false;
                 rb.AddTorque(torqueForce);
-                fire2.SetActive(true);
                 thrustingRightNow = true;
             }else {
-                fire2.SetActive(false);
+                if(fire2On){
+                    StartCoroutine(VolumeFade(fire2AS, 0f, 0.2f));
+                    fire2SR.enabled=false;
+                    fire2On=false;
+                }
             }
 
             if(rightPress && canThrust){
+                fire3SR.enabled=true;
+                fire3AS.volume = fire3ASvol;
+                fire3AS.UnPause();
+                fire3On=true;
+
                 fuelLeft = Mathf.Max(0,fuelLeft-fuelConsumptionRotate);
                 regenFuel = false;
                 rb.AddTorque(-1*torqueForce);
-                fire3.SetActive(true);
                 thrustingRightNow = true;
             } else {
-                fire3.SetActive(false);
+                if(fire3On){
+                    StartCoroutine(VolumeFade(fire3AS, 0f, 0.2f));
+                    fire3SR.enabled=false;
+                    fire3On=false;
+                }
             }
 
             //if(!upPress && !leftPress && !rightPress){
@@ -165,4 +204,17 @@ public class shuttleMovement : MonoBehaviour
             fire2.SetActive(false);
             fire3.SetActive(false);
         }
+
+    //Use StartCoroutine();
+    IEnumerator VolumeFade(AudioSource _AudioSource, float _EndVolume, float _FadeLength)
+    {
+        float _StartVolume = _AudioSource.volume;
+        float _StartTime = Time.time;
+        while (Time.time < _StartTime + _FadeLength)
+        {
+            _AudioSource.volume = _StartVolume + ((_EndVolume - _StartVolume) * ((Time.time - _StartTime) / _FadeLength));
+            yield return null;
+        }
+        if (_EndVolume == 0) {_AudioSource.Pause();}
+    }
 }
