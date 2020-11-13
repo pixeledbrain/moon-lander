@@ -78,7 +78,7 @@ Reset Level | R |
 - [ ] Sound Effects for goal
 - [X] Sound Effects for bonks
 - [X] Sound Effects for thruster
-- [ ] Background Music
+- [ ] Background Music (Possibly different for each level theme + menu)
 
 ### Level Design
 - [ ] Level 1 (City)
