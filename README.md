@@ -53,9 +53,9 @@ Reset Level | R |
 - [X] Auto-reset sprites (Invis for now)
 - [X] Background for Moon
 - [X] Tileset for Moon
-- [ ] Background for city
+- [X] Background for city
 - [X] Tileset for city (Buildings)
-- [ ] Background for Sky
+- [X] Background for Sky
 - [X] Tileset for Sky (Clouds)
 - [X] Background for Asteroid
 - [X] Tileset for Asteroid
@@ -115,7 +115,9 @@ Reset Level | R |
 - [ ] Button & Dialogue Background for Asteroid
 - [ ] Button & Dialogue Background for Sky
 - [ ] Button & Dialogue Background for city
-
+- [ ] Divide goal in background and foreground and give it an animation
+- [ ] Different Background for City and Sky
+ 
 
 
 
