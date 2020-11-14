@@ -22,6 +22,7 @@ public class shuttleMovement : MonoBehaviour
     public float StartingY;
 
     public float torqueForce = 1;
+    float realTorqueForce =1;
     public float pushForce = 10;
     public float fuelConsumption;
     public float fuelConsumptionRotate;
@@ -83,9 +84,10 @@ public class shuttleMovement : MonoBehaviour
 
             //other alternative
             float dampForce = 9.81f*gravScale;
-            float wantedUpwardForce = (4f-(9.81f/6f));
+            float wantedUpwardForce = (pushForce-(9.81f/6f));
             wantedUpwardForce = wantedUpwardForce + wantedUpwardForce*(gravScale-0.166666f)*adjustThrustScale;
             realPushForce = dampForce+wantedUpwardForce;
+            realTorqueForce = torqueForce + (torqueForce*((gravScale-0.166666f)/0.166666f))*(3f/4f);
         } else {
             realPushForce = pushForce;
         }
@@ -161,7 +163,8 @@ public class shuttleMovement : MonoBehaviour
         
                 fuelLeft = Mathf.Max(0,fuelLeft-fuelConsumptionRotate);
                 regenFuel = false;
-                rb.AddTorque(torqueForce);
+                //rb.AddTorque(torqueForce);
+                rb.AddTorque(realTorqueForce);
                 thrustingRightNow = true;
             }else {
                 if(fire2On){
@@ -179,7 +182,8 @@ public class shuttleMovement : MonoBehaviour
 
                 fuelLeft = Mathf.Max(0,fuelLeft-fuelConsumptionRotate);
                 regenFuel = false;
-                rb.AddTorque(-1*torqueForce);
+                //rb.AddTorque(-1*torqueForce);
+                rb.AddTorque(-1*realTorqueForce);
                 thrustingRightNow = true;
             } else {
                 if(fire3On){

@@ -6,9 +6,11 @@ public class Goal : MonoBehaviour
 {
     public GameObject finishScreen;
     public GameObject pauseController;
+    bool triggered = false;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player"){
+        if(other.gameObject.tag == "Player" && !triggered){
+            triggered = true;
             other.gameObject.GetComponent<shuttleMovement>().disableFlames();
             other.gameObject.GetComponent<shuttleMovement>().enabled = false;
             pauseController.GetComponent<PauseMenu>().enabled = false;

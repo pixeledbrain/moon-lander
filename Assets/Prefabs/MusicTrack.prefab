@@ -43,5 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e775284209f22b541a2d4b4f62baecb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  Player: {fileID: 2494187626642068709, guid: 6eca44c088f99ed4680eac01d05f86c7, type: 3}
   levelMusic: {fileID: 8300000, guid: 2b5fbab29a5e5614a93ce3b6e015cd0f, type: 3}
+  myPrefab: {fileID: 0}

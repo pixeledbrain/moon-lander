@@ -81,6 +81,8 @@ Reset Level | R |
 - [X] Level Select
 - [X] Credits
 - [X] Button for Moon
+- [ ] Desktop Icon
+- [ ] Feature image
 
 ### Music & Sound
 - [X] Sound Effects for pickup
@@ -90,7 +92,7 @@ Reset Level | R |
 - [X] Background Music (Possibly different for each level theme + menu)
 
 ### Level Design
-- [ ] Level 1 (City)
+- [X] Level 1 (City)
 - [ ] Level 2 (City)
 - [ ] Level 3 (Sky)
 - [ ] Level 4 (Sky)
