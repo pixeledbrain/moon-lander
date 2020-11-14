@@ -93,8 +93,8 @@ Reset Level | R |
 ### Level Design
 - [X] Level 1 (City)
 - [X] Level 2 (City)
-- [ ] Level 3 (Sky)
-- [ ] Level 4 (Sky)
+- [X] Level 3 (Sky)
+- [X] Level 4 (Sky)
 - [ ] Level 5 (Asteroid)
 - [ ] Level 6 (Asteroid)
 - [ ] Level 7 (Moon)
