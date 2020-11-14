@@ -135,12 +135,3 @@ Reset Level | R |
 - [ ] Final goal
 - [ ] Final Cutscene
 
-
-
-&nbsp;
- 
-&nbsp;
-
-&nbsp;
-
-Copyright 2020, Alberto Paradís Llop. All right reserved.
