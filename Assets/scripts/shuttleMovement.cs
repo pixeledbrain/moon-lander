@@ -59,6 +59,8 @@ public class shuttleMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
+
         gameObject.transform.position = new Vector3(StartingX,StartingY);
         rb = gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
         fuelLeft = 1;

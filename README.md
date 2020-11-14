@@ -99,8 +99,6 @@ Reset Level | R |
 - [ ] Level 6 (Asteroid)
 - [ ] Level 7 (Moon)
 - [ ] Level 8 (Moon)
-- [ ] Level 9 (Moon)
-- [ ] Level 10 (Moon)
 
 ## Fixes:
 - [X] Fuel Regen Control fix
@@ -114,7 +112,7 @@ Reset Level | R |
 - [X] Fix Spaceship textures
 - [X] Disable ship sfx when stuck
 - [X] Fix popping noise on thrusters (could be better)
-- [ ] Different Final Level "level finished" screen (disable button)
+- [X] Different Final Level "level finished" screen (disable button)
 - [X] Finish Credits
 - [ ] Adjust Credits
 

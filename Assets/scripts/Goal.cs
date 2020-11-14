@@ -22,6 +22,7 @@ public class Goal : MonoBehaviour
 
     IEnumerator CoroutineMethod(){
         yield return new WaitForSeconds(0.5f);
+        Time.timeScale = 0;
         finishScreen.SetActive(true);
         
     }
