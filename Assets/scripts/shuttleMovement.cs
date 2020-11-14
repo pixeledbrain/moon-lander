@@ -82,12 +82,20 @@ public class shuttleMovement : MonoBehaviour
             float gravScale = rb.gravityScale;
             //realPushForce = (4f/0.166666f) * gravScale;
 
+            if(gravScale <= 0.166666){
+                float dampForce = 9.81f*gravScale;
+                float wantedUpwardForce = (pushForce-(9.81f/6f));
+                wantedUpwardForce = wantedUpwardForce + wantedUpwardForce*(gravScale-0.166666f)*(adjustThrustScale/2);
+                realPushForce = dampForce+wantedUpwardForce;
+                realTorqueForce = torqueForce;
+            } else {
             //other alternative
-            float dampForce = 9.81f*gravScale;
-            float wantedUpwardForce = (pushForce-(9.81f/6f));
-            wantedUpwardForce = wantedUpwardForce + wantedUpwardForce*(gravScale-0.166666f)*adjustThrustScale;
-            realPushForce = dampForce+wantedUpwardForce;
-            realTorqueForce = torqueForce + (torqueForce*((gravScale-0.166666f)/0.166666f))*(3f/4f);
+                float dampForce = 9.81f*gravScale;
+                float wantedUpwardForce = (pushForce-(9.81f/6f));
+                wantedUpwardForce = wantedUpwardForce + wantedUpwardForce*(gravScale-0.166666f)*adjustThrustScale;
+                realPushForce = dampForce+wantedUpwardForce;
+                realTorqueForce = torqueForce + (torqueForce*((gravScale-0.166666f)/0.166666f))*(3f/4f);
+            }
         } else {
             realPushForce = pushForce;
         }

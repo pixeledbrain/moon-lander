@@ -2,10 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelComplete : MonoBehaviour
 {
     public int nextLevelNum;
+
+    private void Awake() {
+        if(nextLevelNum == -1){
+            (GameObject.Find("Next").GetComponent<Button>() as Button).interactable=false;
+        }
+    }
+
     public void selectScene(int num){
         switch (num){
             case 1:

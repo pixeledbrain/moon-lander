@@ -81,8 +81,7 @@ Reset Level | R |
 - [X] Level Select
 - [X] Credits
 - [X] Button for Moon
-- [ ] Desktop Icon
-- [ ] Feature image
+- [X] App Icon
 
 ### Music & Sound
 - [X] Sound Effects for pickup
@@ -93,7 +92,7 @@ Reset Level | R |
 
 ### Level Design
 - [X] Level 1 (City)
-- [ ] Level 2 (City)
+- [X] Level 2 (City)
 - [ ] Level 3 (Sky)
 - [ ] Level 4 (Sky)
 - [ ] Level 5 (Asteroid)
@@ -134,4 +133,15 @@ Reset Level | R |
 - [ ] Different Background for City and Sky
 - [ ] Final goal
 - [ ] Final Cutscene
+- [ ] Fix Jitteryness in textures (borders)
+- [ ] Add separate cloud sound effect?
 
+
+
+&nbsp;
+ 
+&nbsp;
+
+&nbsp;
+
+Copyright 2020, Alberto Paradís Llop. All right reserved.

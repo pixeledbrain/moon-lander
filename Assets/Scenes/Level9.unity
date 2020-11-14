@@ -80488,7 +80488,7 @@ PrefabInstance:
       objectReference: {fileID: -1229546391929214557, guid: 346d22c762ca6c842b690bd9cffa28c1, type: 3}
     - target: {fileID: 1205505560821468075, guid: a5d16d6a15436674b8f694362ef9140d, type: 3}
       propertyPath: nextLevelNum
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1205505560821468079, guid: a5d16d6a15436674b8f694362ef9140d, type: 3}
       propertyPath: m_IsActive
@@ -80570,7 +80570,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4227106566651589850, guid: 84eafd65436a7274c8fa9eae7e6c6b99, type: 3}
       propertyPath: m_GravityScale
-      value: 1
+      value: 0.166666
       objectReference: {fileID: 0}
     - target: {fileID: 4227106566651589851, guid: 84eafd65436a7274c8fa9eae7e6c6b99, type: 3}
       propertyPath: m_Name
@@ -80705,7 +80705,7 @@ PrefabInstance:
     - target: {fileID: 8165309418475959534, guid: fdc0b4fb0a628e2418de90325d12a73a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5056cd66eadc8f9498ae6e0da6b380c0, type: 3}
+      objectReference: {fileID: 21300000, guid: e1fd64d53812f1a4d933cba684fdedb0, type: 3}
     - target: {fileID: 8165309419349108900, guid: fdc0b4fb0a628e2418de90325d12a73a, type: 3}
       propertyPath: menu
       value: 
