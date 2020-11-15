@@ -11,9 +11,6 @@ Platforming game where you control a moon lander. Only controls are to apply rot
 
 My first real project, and first Game Jam, so I went small. Hope you enjoy it!
 
-## Story:
-
-An infinite energy source was discovered on Earth, however, it can't store much energy at once. You control a Shuttle equipped with said energy source, and your objective is to use it to reach the moon to ... .
 
 ## Controls:
 
@@ -45,81 +42,6 @@ Reset Level | R |
 
 &nbsp;
 
-
-
-## TO-DO:
-
-### Programming
-- [X] Basic Controls
-- [X] Pause menu
-- [X] Auto-reset object logic (fall off level)
-- [X] Fuel System
-- [X] Pickups (score coins)  
-- [X] Thrust scaling by gravity
-- [X] Program sound effect (esp. bonks)
-
-### Design in-game
-- [X] In game UI
-- [X] Auto-reset sprites (Invis for now)
-- [X] Background for Moon
-- [X] Tileset for Moon
-- [X] Background for city
-- [X] Tileset for city (Buildings)
-- [X] Background for Sky
-- [X] Tileset for Sky (Clouds)
-- [X] Background for Asteroid
-- [X] Tileset for Asteroid
-- [X] Basic Shuttle Sprites
-- [X] Crystal Sprite
-- [X] Goal Sprite
-- [X] Visual Effects for crystals
-- [X] Visual Effect for Shuttle
-
-### Design other
-- [X] Title for title screen
-- [X] Main Menu
-- [X] Level Select
-- [X] Credits
-- [X] Button for Moon
-- [X] App Icon
-
-### Music & Sound
-- [X] Sound Effects for pickup
-- [X] Sound Effects for goal
-- [X] Sound Effects for bonks
-- [X] Sound Effects for thruster
-- [X] Background Music (Possibly different for each level theme + menu)
-
-### Level Design
-- [X] Level 1 (City)
-- [X] Level 2 (City)
-- [X] Level 3 (Sky)
-- [X] Level 4 (Sky)
-- [X] Level 5 (Asteroid)
-- [X] Level 6 (Asteroid)
-- [X] Level 7 (Moon)
-- [X] Level 8 (Moon)
-
-## Fixes:
-- [X] Fuel Regen Control fix
-- [X] Change Reset System
-- [X] Extra spaceship animations
-- [X] Text size in Buttons (Note: Text Pivots)
-- [X] Resizing
-- [X] Fix main menu text layout
-- [X] Fix Level Select text layout
-- [X] Fix Ground Textures
-- [X] Fix Spaceship textures
-- [X] Disable ship sfx when stuck
-- [X] Fix popping noise on thrusters (could be better)
-- [X] Different Final Level "level finished" screen (disable button)
-- [X] Finish Credits
-- [X] Adjust Credits
-
-## Optional Fixes:
-- [ ] Add story prelude to scene 1
-- [ ] General visual improvements everywhere
-- [ ] Make a goal that makes sense
 
 ## Future work:
 - [ ] Power-ups (Unlimited boost for time, stronger boost for time)
