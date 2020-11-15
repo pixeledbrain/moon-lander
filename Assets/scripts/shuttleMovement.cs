@@ -38,6 +38,8 @@ public class shuttleMovement : MonoBehaviour
 
     Rigidbody2D rb;
 
+    bool Zgrav = false;
+
     GameObject fire1,fire2,fire3;
     AudioSource fire1AS,fire2AS,fire3AS;
     SpriteRenderer fire1SR,fire2SR,fire3SR;
@@ -61,7 +63,7 @@ public class shuttleMovement : MonoBehaviour
     {
         Time.timeScale = 1;
 
-        gameObject.transform.position = new Vector3(StartingX,StartingY);
+        //gameObject.transform.position = new Vector3(StartingX,StartingY);
         rb = gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
         fuelLeft = 1;
         fire1 = gameObject.transform.Find("Fire1").gameObject;
@@ -85,6 +87,7 @@ public class shuttleMovement : MonoBehaviour
             //realPushForce = (4f/0.166666f) * gravScale;
 
             if(gravScale <= 0.166666){
+                Zgrav = gravScale==0;
                 float dampForce = 9.81f*gravScale;
                 float wantedUpwardForce = (pushForce-(9.81f/6f));
                 wantedUpwardForce = wantedUpwardForce + wantedUpwardForce*(gravScale-0.166666f)*(adjustThrustScale/2);

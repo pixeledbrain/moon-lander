@@ -76,7 +76,7 @@ Reset Level | R |
 - [X] Visual Effect for Shuttle
 
 ### Design other
-- [ ] Title for title screen
+- [X] Title for title screen
 - [X] Main Menu
 - [X] Level Select
 - [X] Credits
@@ -95,10 +95,10 @@ Reset Level | R |
 - [X] Level 2 (City)
 - [X] Level 3 (Sky)
 - [X] Level 4 (Sky)
-- [ ] Level 5 (Asteroid)
-- [ ] Level 6 (Asteroid)
-- [ ] Level 7 (Moon)
-- [ ] Level 8 (Moon)
+- [X] Level 5 (Asteroid)
+- [X] Level 6 (Asteroid)
+- [X] Level 7 (Moon)
+- [X] Level 8 (Moon)
 
 ## Fixes:
 - [X] Fuel Regen Control fix
@@ -114,7 +114,7 @@ Reset Level | R |
 - [X] Fix popping noise on thrusters (could be better)
 - [X] Different Final Level "level finished" screen (disable button)
 - [X] Finish Credits
-- [ ] Adjust Credits
+- [X] Adjust Credits
 
 ## Optional Fixes:
 - [ ] Add story prelude to scene 1
