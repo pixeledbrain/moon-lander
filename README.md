@@ -31,11 +31,11 @@ Reset Level | R |
 
 [Coin02.wav - sharesynth](https://freesound.org/people/sharesynth/sounds/341229/) - Crystal Pickup Sound Effect
 
-[MattLeschuck - success_bell](https://freesound.org/people/MattLeschuck/sounds/511484/) - Goal Reached Sound Effect
+[success_bell - MattLeschuck](https://freesound.org/people/MattLeschuck/sounds/511484/) - Goal Reached Sound Effect
 
-[Soft and Furious - Powerful Stasis](https://freemusicarchive.org/music/Soft_and_Furious/You_know_where_to_find_me/Soft_and_Furious_-_You_know_where_to_find_me_-_07_Powerful_Stasis) - Main Menu BGM
+[Powerful Stasis - Soft and Furious](https://freemusicarchive.org/music/Soft_and_Furious/You_know_where_to_find_me/Soft_and_Furious_-_You_know_where_to_find_me_-_07_Powerful_Stasis) - Main Menu BGM
 
-[Soft and Furious - Horizon Ending](https://freemusicarchive.org/music/Soft_and_Furious/You_know_where_to_find_me/Soft_and_Furious_-_You_know_where_to_find_me_-_09_Horizon_Ending) - Game BGM
+[Horizon Ending - Soft and Furious](https://freemusicarchive.org/music/Soft_and_Furious/You_know_where_to_find_me/Soft_and_Furious_-_You_know_where_to_find_me_-_09_Horizon_Ending) - Game BGM
 
 
 &nbsp;
@@ -54,7 +54,9 @@ Reset Level | R |
 - [ ] Final goal
 - [ ] Final Cutscene
 - [ ] Fix Jitteryness in textures (borders)
-- [ ] Add separate cloud sound effect?
+- [ ] Add separate cloud sound effect by material
+- [ ] Add more levels/make current betters longer
+- [ ] Make song loop properly
 
 
 
